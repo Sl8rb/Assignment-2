@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Web Development">
+        <meta name="keywords" content="HTML and CSS">
+        <meta name="author" content="Slater Brewer">
+        <link href="css\style.css" rel="stylesheet">
+        <script src="js/jquery-4.0.0.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="restaurant.html">Restaurant</a>
+                <a href="reccomend.html">Reccomendation</a>
+                <a href="register.html">Register</a>
+                <a href="reservation.html">Reserve Table</a>
+            </nav>
+            
+           <body>
+	<div class="screenoverlay"></div>
+		<form id="regform" method="post"
+			action="http://mercury.swin.edu.au/it000000/formtest.php">
+
+			<span>Section A</span>
+		<fieldset>
+			<legend>Account Information</legend>
+
+			<div class="textinput">
+				<label for="uname">Username</label>
+				<input id="uname" type="text" name="id" />
+			</div>
+
+			<div class="textinput">
+				<label for="phone">Phone Number</label>
+				<input id="phone" type="number" name="phone">
+			</div>
+
+			<div class="textinput">
+				<label for="pwd1">Password</label>
+				<input id="pwd1" type="password" name="pwd1" />
+			</div>
+
+			<div class="textinput">
+				<label for="pwd2">Retype Password</label>
+				<input id="pwd2" type="password" name="pwd2" />
+			</div>
+		</fieldset>
+
+			<span>Section B</span>
+		<fieldset>
+			<legend>User Information</legend>
+
+			<div class="textinput">
+				<label for="name">Name</label>
+				<input id="name" type="text" name="uname" />
+			</div>
+
+			<div class="textinput">
+				<label for="email">Email Address</label>
+				<input id="email" type="text" name="email" />
+			</div>
+
+			<div class="textinput">
+				<label for="country">Country</label>
+				<input id="country" type="text" name="country" />
+			</div>
+
+			<div class="radioinput">
+				<span class="radiolabel">Gender</span>
+
+				<input id="genm" type="radio" name="gender" value="M" />
+				<label for="genm">Male</label>
+
+				<input id="genf" type="radio" name="gender" value="F" />
+				<label for="genf">Female</label>
+			</div>
+			<div class="checkboxinput">
+				<span class="checkboxlabel">Dietary Requirements</span>
+				<input id="none" type="checkbox" name="dietary[]" value="N" />
+				<label for="none">None</label>
+
+				<input id="vegetarian" type="checkbox" name="dietary[]" value="V" />
+				<label for="vegetarian">Vegetarian</label>
+
+				<input id="vegan" type="checkbox" name="dietary[]" value="VE" />
+				<label for="vegan">Vegan</label>
+
+				<input id="glutenfree" type="checkbox" name="dietary[]" value="GF" />
+				<label for="GF">Gluten Free</label>
+			</div>
+		</fieldset>
+
+		<div class="buttoninput">
+			<input type="submit" value="Test Register" />
+		</div>
+	</form>
+</body>
+</html>

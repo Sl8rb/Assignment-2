@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reccomend</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Web Development">
+        <meta name="keywords" content="HTML and CSS">
+        <meta name="author" content="Slater Brewer">
+        <link href="css\style.css" rel="stylesheet">
+        <script src="js/jquery-4.0.0.min.js"></script>
+        <script src="js/reccomend.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="restaurant.html">Restaurant</a>
+                <a href="reccomend.html">Reccomendation</a>
+                <a href="register.html">Register</a>
+                <a href="reservation.html">Reserve Table</a>
+            </nav>
+            
+            <header>
+                <h1>Reccomendation</h1>
+            </header>
+            <select id="diet">
+                <option>None</option>
+                <option>Vegan</option>
+                <option>Vegetarian</option>
+                <option>Gluten Free</option>
+            </select>
+            <select id="budget">
+                <Option>$20</Option>
+                <option>$40</option>
+                <option>$60</option>
+            </select>
+            <select id="purpose">
+                <option>Family Dinner</option>
+                <option>Meal with Friends</option>
+                <option>Cheap Food</option>
+            </select>
+            <button onclick="recommendRestaurant()">Reccomend</button>
+            <div id="result"></div>
+        </div>
+    </body>
+</html>
