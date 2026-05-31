@@ -135,7 +135,6 @@ function emailcopy() {
 
 function init () {
 
-	$(".collapse").click(toggle);
 	$(regform).submit(validate)
 }
 
